@@ -9,7 +9,8 @@ ENV LOG_LEVEL="info" \
     PG_HOST="" \
     PG_USER="" \
     PG_PASSWORD="" \
-    PG_PORT=""
+    PG_PORT="" \
+    SLACK_OAUTH_TOKEN=""
 
 RUN npm config set "@studio-75:registry" https://npm.pkg.github.com/ \
     && npm config set "@valcompare:registry" https://npm.pkg.github.com/ \
