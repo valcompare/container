@@ -24,8 +24,8 @@ jobs:
           client-id: ${{ secrets.MACHINE_IDENTITY_CLIENT_ID }}
           client-secret: ${{ secrets.MACHINE_IDENTITY_CLIENT_SECRET }}
           env-slug: prod
-          project-slug: main-qx-mr
-          secret-path: /valcompare
+          project-slug: execution-environments-v5w-q
+          secret-path: /ci
 
       - name: Checkout repository
         uses: actions/checkout@v4
