@@ -25,7 +25,8 @@ jobs:
           client-secret: ${{ secrets.MACHINE_IDENTITY_CLIENT_SECRET }}
           env-slug: prod
           project-slug: execution-environments-v5w-q
-          secret-path: /ci
+          secret-path: /github
+          recursive: true
 
       - name: Checkout repository
         uses: actions/checkout@v4

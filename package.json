@@ -5,7 +5,8 @@
   "scripts": {
     "bump-deps": "ncu -u --deep",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "setup": "node ./__setup__/index.js"
   },
   "devDependencies": {
     "husky": "^9.1.7",
