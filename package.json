@@ -5,6 +5,7 @@
   "scripts": {
     "bump-deps": "ncu -u --deep",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "onboard": "node ./.onboard/index.js",
     "prepare": "husky",
     "setup": "node ./__setup__/index.js"
   },
