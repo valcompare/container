@@ -1,38 +1,6 @@
-import { onboard } from '@studio-75/sdk.onboard';
 import { appConfig, dockerNodeApp, dockerNodeAppConfig, infisicalConfig, npmConfig } from '@studio-75/sdk.container';
-
-const infisical = {
-  projectSlug: 'execution-environments-v5w-q',
-  secretPath: '/github'
-}
-
-const npm = {
-  registry: 'https://npm.pkg.github.com/',
-  tokenName: 'NPM_TOKEN',
-  scopes: ['studio-75', 'valcompare'],
-}
-
-const website = {
-  name: 'Website',
-  package: '@valcompare/app.website',
-  command: 'website',
-}
-
-const standardConfig = {
-  LOG_LEVEL: 'info',
-};
-
-const pgConfig = {
-  PG_DATABASE: '',
-  PG_HOST: '',
-  PG_USER: '',
-  PG_PASSWORD: '',
-  PG_PORT: '',
-};
-
-const slackConfig = {
-  SLACK_OAUTH_TOKEN: '',
-};
+import { onboard } from '@studio-75/sdk.onboard';
+import { infisical, npm, pgConfig, slackConfig, standardConfig, website } from './config';
 
 const run = async () => {
   await onboard().run();
