@@ -27,6 +27,7 @@ jobs:
           env-slug: prod
           project-slug: execution-environments-v5w-q
           secret-path: /github
+          recursive: true
 
       - name: Checkout repository
         uses: actions/checkout@v4

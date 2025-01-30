@@ -31,13 +31,11 @@ const slackConfig = {
 const run = async () => {
   await onboard().run();
 
-  const npmSettings = npmConfig().setRegistry(npm.registry).setTokenName(npm.tokenName).addScopes(npm.scopes).create();
-
   await dockerNodeApp()
     .setInfisicalConfig(infisicalConfig().setProjectSlug(infisical.projectSlug).setSecretPath(infisical.secretPath).create())
     .addNodeApp(
       dockerNodeAppConfig()
-        .addNpmConfig(npmSettings)
+        .addNpmConfig(npmConfig().setRegistry(npm.registry).setTokenName(npm.tokenName).addScopes(npm.scopes).create())
         .setAppConfig(appConfig().setName('Website').setPackage('@valcompare/app.website').setCommand('website').create())
         .addEnvValues({ ...standardConfig, ...pgConfig, ...slackConfig })
         .setExposePort(3000)
