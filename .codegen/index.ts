@@ -12,6 +12,12 @@ const npm = {
   scopes: ['studio-75', 'valcompare'],
 }
 
+const website = {
+  name: 'Website',
+  package: '@valcompare/app.website',
+  command: 'website',
+}
+
 const standardConfig = {
   LOG_LEVEL: 'info',
 };
@@ -36,7 +42,7 @@ const run = async () => {
     .addNodeApp(
       dockerNodeAppConfig()
         .addNpmConfig(npmConfig().setRegistry(npm.registry).setTokenName(npm.tokenName).addScopes(npm.scopes).create())
-        .setAppConfig(appConfig().setName('Website').setPackage('@valcompare/app.website').setCommand('website').create())
+        .setAppConfig(appConfig().setName(website.name).setPackage(website.package).setCommand(website.command).create())
         .addEnvValues({ ...standardConfig, ...pgConfig, ...slackConfig })
         .setExposePort(3000)
         .create()
