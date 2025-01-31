@@ -1,21 +1,32 @@
-import { appConfig, dockerNodeApp, dockerNodeAppConfig, infisicalConfig, npmConfig } from '@studio-75/sdk.container';
 import { onboard } from '@studio-75/sdk.onboard';
-import { infisical, npm, pgConfig, slackConfig, standardConfig, website } from './config';
+import { dockerfileNodeApp } from '@studio-75/sdk.dockerfile.node-app';
+import { dockerGitHubAction } from '@studio-75/sdk.github-action.docker.node-app';
+
+const envStandard = {
+  LOG_LEVEL: 'info',
+};
+
+const envDatabase = {
+  PG_DATABASE: '',
+  PG_HOST: '',
+  PG_USER: '',
+  PG_PASSWORD: '',
+  PG_PORT: '',
+};
+
+export const slackConfig = {
+  SLACK_OAUTH_TOKEN: '',
+};
+
+const infisical = { projectSlug: 'execution-environments-v5w-q', secretPath: '/github' };
+const npmSettings = { registry: 'https://npm.pkg.github.com/', scopes: ['studio-75', 'valcompare'] };
+const env = { ...envStandard, ...envDatabase, ...slackConfig };
+const appWebsite = { name: 'Website', package: '@valcompare/app.website', command: 'website', env };
 
 const run = async () => {
-  await onboard().run();
-
-  await dockerNodeApp()
-    .setInfisicalConfig(infisicalConfig().setProjectSlug(infisical.projectSlug).setSecretPath(infisical.secretPath).create())
-    .addNodeApp(
-      dockerNodeAppConfig()
-        .addNpmConfig(npmConfig().setRegistry(npm.registry).setTokenName(npm.tokenName).addScopes(npm.scopes).create())
-        .setAppConfig(appConfig().setName(website.name).setPackage(website.package).setCommand(website.command).create())
-        .addEnvValues({ ...standardConfig, ...pgConfig, ...slackConfig })
-        .setExposePort(3000)
-        .create()
-    )
-    .run();
+  await onboard();
+  await dockerfileNodeApp({ npmSettings, apps: appWebsite });
+  await dockerGitHubAction({ infisical, appNames: appWebsite.name });
 };
 
 run();
