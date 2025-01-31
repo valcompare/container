@@ -29,6 +29,9 @@ jobs:
           secret-path: /github
           recursive: true
 
+      - name: Show environment variables
+        run: env
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
