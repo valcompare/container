@@ -26,7 +26,7 @@ const appWebsite = { name: 'Website', package: '@valcompare/app.website', comman
 const run = async () => {
   await onboard();
   await dockerfileNodeApp({ npmSettings, apps: appWebsite });
-  await dockerGitHubAction({ showEnv: true, infisical, appNames: appWebsite.name });
+  await dockerGitHubAction({ infisical, appNames: appWebsite.name });
 };
 
 run();

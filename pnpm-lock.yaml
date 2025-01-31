@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@studio-75/sdk.dockerfile.node-app':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.0.3
+        version: 1.0.3
       '@studio-75/sdk.github-action.docker.node-app':
         specifier: ^1.0.3
         version: 1.0.3
@@ -179,8 +179,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.2':
-    resolution: {integrity: sha512-uEBpascogUuXJWZ8V2CWdztbLYMnKQoT7aQ1qH93gD1lDeek4M+b2384KzUTq5YPA+0aKgipH/NSr/H7X9Ljkg==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.2/fc4106fc32f0af882fa6059563341454dc424362}
+  '@studio-75/sdk.dockerfile.node-app@1.0.3':
+    resolution: {integrity: sha512-Y+ayaPWuXhx7Weh+LIQLaNTloUVH27/VeQ0tkNIEGqT1GtUb0X/wCcKRVt7KyCFdx8H33DFrvc9yrVU6joD6kw==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.3/e272e0a2895e5294301bf5da6fd34d1ec4006ca9}
 
   '@studio-75/sdk.github-action.docker.node-app@1.0.3':
     resolution: {integrity: sha512-HBTZNt/0XZQ2PS7EJohEFOAl+Bm89lgebrKVDeyG2XgEIADJo7pYHlYU2LW74Kt6v3bXlcQopPfm0huqs4N07g==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.3/3c61487d1a2b1531a538a664275f0b86e5ae1053}
@@ -526,7 +526,7 @@ snapshots:
   '@esbuild/win32-x64@0.23.1':
     optional: true
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.2':
+  '@studio-75/sdk.dockerfile.node-app@1.0.3':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
