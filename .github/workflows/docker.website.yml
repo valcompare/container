@@ -58,7 +58,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            NPM_TOKEN=${{ env.NPM_READ_TOKEN }}
+            NPM_TOKEN=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
 
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1
