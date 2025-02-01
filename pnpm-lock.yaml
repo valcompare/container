@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@studio-75/sdk.dockerfile.node-app':
-        specifier: ^1.0.4
-        version: 1.0.4
+        specifier: ^1.0.6
+        version: 1.0.6
       '@studio-75/sdk.github-action.docker.node-app':
-        specifier: ^1.0.4
-        version: 1.0.4
+        specifier: ^1.0.5
+        version: 1.0.5
       '@studio-75/sdk.onboard':
         specifier: ^1.0.3
         version: 1.0.3
@@ -179,11 +179,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.4':
-    resolution: {integrity: sha512-sx+jh5XLg0W0OkK+p0OJ0aPoQtb6o2T3hcRvSC45BWnDd5yetgZ2aYGM1zfUHiVGwMN13Llls9XxlbAlOnBQ/Q==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.4/4a7e552a0d82ab29ce11045c7d577702b0e9ebbb}
+  '@studio-75/sdk.dockerfile.node-app@1.0.6':
+    resolution: {integrity: sha512-35Z10V6iOQ7FCuuiL63E6F5fguaQO7cwV4nowqHp7XGfPH1rmiXlKp/P7ftQWNLQl77Mkl82jBFqyWscs+dBGA==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.6/bd765a01bc2d0419a73f3c0cd87109794d96a331}
 
-  '@studio-75/sdk.github-action.docker.node-app@1.0.4':
-    resolution: {integrity: sha512-eiqVuoovDiwNKcjBX3+ikH3OMRmw5OLGGREEdim52trQci1lziggUh7bm0RutN5XJhibq454fXrtd5yS0P4FvA==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.4/9e35ad14d8cfdeb5d5b3c5dcbe6d82ad4a34b9fc}
+  '@studio-75/sdk.github-action.docker.node-app@1.0.5':
+    resolution: {integrity: sha512-3n0RCfuO6TLyceVe9EZ0VgmHcbZaccjYudQXHJ9ZgCpOYY9ZvdxeBvl7+RQkX9VqleSEJDdlOJB65VQpL4u0xg==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.5/d71b9829aea90ec897c23f4e515a5ab474d249af}
 
   '@studio-75/sdk.onboard@1.0.3':
     resolution: {integrity: sha512-xgavIbmcBoiXafcaSxvBWfwu8CJTALD+nLJrx46I/48HzcDYd0SLbqR0EBsIrmasXWVWCfFJqjXeSYi+5Oeo7g==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.onboard/1.0.3/3b433f032ec68d93256514e44ab787e6141b2383}
@@ -526,13 +526,13 @@ snapshots:
   '@esbuild/win32-x64@0.23.1':
     optional: true
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.4':
+  '@studio-75/sdk.dockerfile.node-app@1.0.6':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
       lodash: 4.17.21
 
-  '@studio-75/sdk.github-action.docker.node-app@1.0.4':
+  '@studio-75/sdk.github-action.docker.node-app@1.0.5':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
