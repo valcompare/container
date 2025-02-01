@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@studio-75/sdk.dockerfile.node-app':
-        specifier: ^1.0.3
-        version: 1.0.3
+        specifier: ^1.0.4
+        version: 1.0.4
       '@studio-75/sdk.github-action.docker.node-app':
+        specifier: ^1.0.4
+        version: 1.0.4
+      '@studio-75/sdk.onboard':
         specifier: ^1.0.3
         version: 1.0.3
-      '@studio-75/sdk.onboard':
-        specifier: ^1.0.2
-        version: 1.0.2
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -179,14 +179,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.3':
-    resolution: {integrity: sha512-Y+ayaPWuXhx7Weh+LIQLaNTloUVH27/VeQ0tkNIEGqT1GtUb0X/wCcKRVt7KyCFdx8H33DFrvc9yrVU6joD6kw==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.3/e272e0a2895e5294301bf5da6fd34d1ec4006ca9}
+  '@studio-75/sdk.dockerfile.node-app@1.0.4':
+    resolution: {integrity: sha512-sx+jh5XLg0W0OkK+p0OJ0aPoQtb6o2T3hcRvSC45BWnDd5yetgZ2aYGM1zfUHiVGwMN13Llls9XxlbAlOnBQ/Q==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.dockerfile.node-app/1.0.4/4a7e552a0d82ab29ce11045c7d577702b0e9ebbb}
 
-  '@studio-75/sdk.github-action.docker.node-app@1.0.3':
-    resolution: {integrity: sha512-HBTZNt/0XZQ2PS7EJohEFOAl+Bm89lgebrKVDeyG2XgEIADJo7pYHlYU2LW74Kt6v3bXlcQopPfm0huqs4N07g==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.3/3c61487d1a2b1531a538a664275f0b86e5ae1053}
+  '@studio-75/sdk.github-action.docker.node-app@1.0.4':
+    resolution: {integrity: sha512-eiqVuoovDiwNKcjBX3+ikH3OMRmw5OLGGREEdim52trQci1lziggUh7bm0RutN5XJhibq454fXrtd5yS0P4FvA==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.4/9e35ad14d8cfdeb5d5b3c5dcbe6d82ad4a34b9fc}
 
-  '@studio-75/sdk.onboard@1.0.2':
-    resolution: {integrity: sha512-o9l1p6m/RARotefPxBIDT1nxcdROMXmqYhbRT0vrVUu8c67XHrpSaY5FseNFc+/vph0Fmz3g6TXSPeRY65I/3A==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.onboard/1.0.2/2195b630933af1c6ae5e2a094d0989a1f668ccdc}
+  '@studio-75/sdk.onboard@1.0.3':
+    resolution: {integrity: sha512-xgavIbmcBoiXafcaSxvBWfwu8CJTALD+nLJrx46I/48HzcDYd0SLbqR0EBsIrmasXWVWCfFJqjXeSYi+5Oeo7g==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.onboard/1.0.3/3b433f032ec68d93256514e44ab787e6141b2383}
 
   '@types/lodash@4.17.15':
     resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
@@ -526,19 +526,19 @@ snapshots:
   '@esbuild/win32-x64@0.23.1':
     optional: true
 
-  '@studio-75/sdk.dockerfile.node-app@1.0.3':
+  '@studio-75/sdk.dockerfile.node-app@1.0.4':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
       lodash: 4.17.21
 
-  '@studio-75/sdk.github-action.docker.node-app@1.0.3':
+  '@studio-75/sdk.github-action.docker.node-app@1.0.4':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
       lodash: 4.17.21
 
-  '@studio-75/sdk.onboard@1.0.2':
+  '@studio-75/sdk.onboard@1.0.3':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20

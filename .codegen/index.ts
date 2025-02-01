@@ -1,5 +1,5 @@
-import { dockerfileNodeApp } from '@studio-75/sdk.dockerfile.node-app';
-import { dockerGitHubAction } from '@studio-75/sdk.github-action.docker.node-app';
+import { nodeAppDockerfile } from '@studio-75/sdk.dockerfile.node-app';
+import { nodeAppDockerGitHubAction } from '@studio-75/sdk.github-action.docker.node-app';
 import { onboard } from '@studio-75/sdk.onboard';
 
 const envStandard = {
@@ -25,8 +25,8 @@ const appWebsite = { name: 'Website', package: '@valcompare/app.website', comman
 
 const run = async () => {
   await onboard();
-  await dockerfileNodeApp({ npmSettings, apps: appWebsite });
-  await dockerGitHubAction({ infisical, appNames: appWebsite.name });
+  await nodeAppDockerfile({ npmSettings, apps: appWebsite });
+  await nodeAppDockerGitHubAction({ infisical, appNames: appWebsite.name });
 };
 
 run();
