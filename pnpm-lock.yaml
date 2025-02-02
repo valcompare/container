@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@valcompare/sdk.container':
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.0.3
+        version: 1.0.3
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -185,8 +185,8 @@ packages:
   '@types/lodash@4.17.15':
     resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
 
-  '@valcompare/sdk.container@1.0.2':
-    resolution: {integrity: sha512-6xvljcKwrJzFSChcT2VP6EkAEHEbER2glzpSLkwyb17E0Dkt6hFvAqm7hapzAalR4AO0XRlwJfcE0ImcECXhUA==, tarball: https://npm.pkg.github.com/download/@valcompare/sdk.container/1.0.2/afde64c9dd78d648be743584511a873de2d2e7b7}
+  '@valcompare/sdk.container@1.0.3':
+    resolution: {integrity: sha512-Lx4P3JzkuxE3qzIaN1kqF1I0iL35xzHbP+SwthbdLTzQfz2iort/atyD+9NBdMAl2nekKw8k7CUJyek3uBeSaw==, tarball: https://npm.pkg.github.com/download/@valcompare/sdk.container/1.0.3/0d03d997f0f1980d7a4e7546e5c4b9d17fc528b3}
 
   ansi-escapes@7.0.0:
     resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
@@ -543,7 +543,7 @@ snapshots:
 
   '@types/lodash@4.17.15': {}
 
-  '@valcompare/sdk.container@1.0.2':
+  '@valcompare/sdk.container@1.0.3':
     dependencies:
       '@studio-75/sdk.dockerfile.node-app': 1.0.7
       '@studio-75/sdk.github-action.docker.node-app': 1.0.6

@@ -1,6 +1,5 @@
 {
   "name": "root",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "bump-deps": "ncu -u --deep",
@@ -10,7 +9,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@valcompare/sdk.container": "^1.0.2",
+    "@valcompare/sdk.container": "^1.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "npm-check-updates": "^17.1.14",

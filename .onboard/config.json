@@ -6,7 +6,7 @@
   },
   "npm": {
     "registry": "https://npm.pkg.github.com/",
-    "scopes": ["@studio-75, @valcompare"],
+    "scopes": ["@studio-75", "@valcompare"],
     "secret": {
       "projectId": "f74e424c-d04a-423f-a552-703c0460f025",
       "environment": "prod",
