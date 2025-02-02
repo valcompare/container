@@ -8,15 +8,9 @@ importers:
 
   .:
     devDependencies:
-      '@studio-75/sdk.dockerfile.node-app':
-        specifier: ^1.0.7
-        version: 1.0.7
-      '@studio-75/sdk.github-action.docker.node-app':
-        specifier: ^1.0.6
-        version: 1.0.6
-      '@studio-75/sdk.onboard':
-        specifier: ^1.0.4
-        version: 1.0.4
+      '@valcompare/sdk.container':
+        specifier: ^1.0.2
+        version: 1.0.2
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -185,11 +179,14 @@ packages:
   '@studio-75/sdk.github-action.docker.node-app@1.0.6':
     resolution: {integrity: sha512-XU8j+CrFpwTyla8snDosiF67YVeA9WPgULz7gTnhBd5/i1RYeWMQTKyZ6w0fud+Zw12GDQlXMUXDC44ainWQ5A==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.github-action.docker.node-app/1.0.6/33223cbf4e6b157316156fc44c2f844417fb486b}
 
-  '@studio-75/sdk.onboard@1.0.4':
-    resolution: {integrity: sha512-KfNMaUVWIs7zvt5YKqEGAqCt+qZxVqcdKlXtL4F8Vyjx42FIoSRfPexjqri8quOmBUbOqdwXDne95kfm2mhq0Q==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.onboard/1.0.4/ec563557652790627223f972e5f2fe0a164ce6ac}
+  '@studio-75/sdk.onboard@1.0.5':
+    resolution: {integrity: sha512-Jtc/PWXYO9g1FsuCpRS5zGAJgfTbTORnalhTz2nvz7D5jRWxyGltcJG/iIXKVZa2Rfkq3U1GZfi2N77MfneY0w==, tarball: https://npm.pkg.github.com/download/@studio-75/sdk.onboard/1.0.5/3d8a79348f2d8ae10e58fa6c52f1d58e1ef9b8b7}
 
   '@types/lodash@4.17.15':
     resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
+
+  '@valcompare/sdk.container@1.0.2':
+    resolution: {integrity: sha512-6xvljcKwrJzFSChcT2VP6EkAEHEbER2glzpSLkwyb17E0Dkt6hFvAqm7hapzAalR4AO0XRlwJfcE0ImcECXhUA==, tarball: https://npm.pkg.github.com/download/@valcompare/sdk.container/1.0.2/afde64c9dd78d648be743584511a873de2d2e7b7}
 
   ansi-escapes@7.0.0:
     resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
@@ -538,13 +535,19 @@ snapshots:
       colorette: 2.0.20
       lodash: 4.17.21
 
-  '@studio-75/sdk.onboard@1.0.4':
+  '@studio-75/sdk.onboard@1.0.5':
     dependencies:
       '@types/lodash': 4.17.15
       colorette: 2.0.20
       lodash: 4.17.21
 
   '@types/lodash@4.17.15': {}
+
+  '@valcompare/sdk.container@1.0.2':
+    dependencies:
+      '@studio-75/sdk.dockerfile.node-app': 1.0.7
+      '@studio-75/sdk.github-action.docker.node-app': 1.0.6
+      '@studio-75/sdk.onboard': 1.0.5
 
   ansi-escapes@7.0.0:
     dependencies:
