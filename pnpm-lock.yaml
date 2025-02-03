@@ -8,9 +8,15 @@ importers:
 
   .:
     devDependencies:
-      '@valcompare/sdk.container':
-        specifier: ^1.0.6
-        version: 1.0.6
+      '@studio-75/sdk.dockerfile.node-app':
+        specifier: ^1.0.9
+        version: 1.0.9
+      '@studio-75/sdk.github-action.docker.node-app':
+        specifier: ^1.0.8
+        version: 1.0.8
+      '@studio-75/sdk.onboard':
+        specifier: ^1.0.7
+        version: 1.0.7
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -190,9 +196,6 @@ packages:
 
   '@types/node@22.13.0':
     resolution: {integrity: sha512-ClIbNe36lawluuvq3+YYhnIN2CELi+6q8NpnM7PYp4hBn/TatfboPgVSm2rwKRfnV2M+Ty9GWDFI64KEe+kysA==}
-
-  '@valcompare/sdk.container@1.0.6':
-    resolution: {integrity: sha512-lypkcPRaCmHTbSvjKIg4A890PrKM3vAu/sWB3i6Y3OkGrrovArrPYB5ZvHSEod4wccKzH/PRS2DpYx+/aIKfrg==, tarball: https://npm.pkg.github.com/download/@valcompare/sdk.container/1.0.6/91da8b5ee46bb7b2e34c368e80fe40f45fe403ab}
 
   ansi-escapes@7.0.0:
     resolution: {integrity: sha512-GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==}
@@ -570,12 +573,6 @@ snapshots:
   '@types/node@22.13.0':
     dependencies:
       undici-types: 6.20.0
-
-  '@valcompare/sdk.container@1.0.6':
-    dependencies:
-      '@studio-75/sdk.dockerfile.node-app': 1.0.9
-      '@studio-75/sdk.github-action.docker.node-app': 1.0.8
-      '@studio-75/sdk.onboard': 1.0.7
 
   ansi-escapes@7.0.0:
     dependencies:
