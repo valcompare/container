@@ -3,7 +3,7 @@ import { nodeAppDockerGitHubAction } from '@studio-75/sdk.github-action.docker.n
 import { onboard } from '@studio-75/sdk.onboard';
 import { website } from './config';
 
-export const container = async () => {
+export const run = async () => {
   await onboard();
   await nodeAppDockerfile({
     npm: { registry: website.npm.registry, scopes: website.npm.readScopes },
@@ -11,3 +11,5 @@ export const container = async () => {
   });
   await nodeAppDockerGitHubAction({ infisical: website.infisical.gitHubAction, appNames: website.name });
 };
+
+run();
