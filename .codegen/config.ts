@@ -34,7 +34,7 @@ export const auth = {
     imageName: 'ghcr.io/valcompare/container-auth:main',
     containerName: 'valcompare.auth',
     envVars: Object.keys(env),
-    hostPort: 3002,
+    hostPort: 5001,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
@@ -61,7 +61,7 @@ export const website = {
     imageName: 'ghcr.io/valcompare/container-website:main',
     containerName: 'valcompare.website',
     envVars: Object.keys(env),
-    hostPort: 3002,
+    hostPort: 5000,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
@@ -88,7 +88,7 @@ export const ops = {
     imageName: 'ghcr.io/valcompare/container-ops:main',
     containerName: 'valcompare.ops',
     envVars: Object.keys(env),
-    hostPort: 3002,
+    hostPort: 5002,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
@@ -115,7 +115,7 @@ export const portalAdvisor = {
     imageName: 'ghcr.io/valcompare/container-ops:main',
     containerName: 'valcompare.portal-advisor',
     envVars: Object.keys(env),
-    hostPort: 3002,
+    hostPort: 5003,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
@@ -142,7 +142,7 @@ export const portalCustomer = {
     imageName: 'ghcr.io/valcompare/container-ops:main',
     containerName: 'valcompare.portal-customer',
     envVars: Object.keys(env),
-    hostPort: 3002,
+    hostPort: 5004,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
