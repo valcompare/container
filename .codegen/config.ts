@@ -3,11 +3,11 @@ const envStandard = {
 };
 
 const envDatabase = {
-  PG_DATABASE: '',
-  PG_HOST: '',
-  PG_USER: '',
-  PG_PASSWORD: '',
-  PG_PORT: '',
+  POSTGRES_DATABASE: '',
+  POSTGRES_HOST: '',
+  POSTGRES_USER: '',
+  POSTGRES_PASSWORD: '',
+  POSTGRES_PORT: '',
 };
 
 const resendConfig = {
