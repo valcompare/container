@@ -1,9 +1,9 @@
 import { nodeAppDockerfile } from '@studio-75/sdk.dockerfile.node-app';
 import { nodeAppDockerGitHubAction } from '@studio-75/sdk.github-action.docker.node-app';
 import { onboard } from '@studio-75/sdk.onboard';
-import { auth, ops, portalAdvisor, portalCustomer, website } from './config';
+import { auth, broker, ops, portalAdvisor, portalCustomer, website } from './config';
 
-const apps = [auth, website, ops, portalAdvisor, portalCustomer];
+const apps = [auth, website, ops, portalAdvisor, portalCustomer, broker];
 
 export const run = async () => {
   await onboard();

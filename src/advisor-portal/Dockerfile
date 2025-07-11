@@ -5,7 +5,9 @@ WORKDIR /usr/src/app
 
 ARG NPM_TOKEN
 
-ENV LOG_LEVEL="info" \
+ENV ENVIRONMENT="" \
+    LOG_LEVEL="info" \
+    NATS_HOST="" \
     POSTGRES_DATABASE="" \
     POSTGRES_HOST="" \
     POSTGRES_USER="" \

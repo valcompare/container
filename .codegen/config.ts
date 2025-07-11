@@ -1,5 +1,10 @@
 const envStandard = {
+  ENVIRONMENT: '',
   LOG_LEVEL: 'info',
+};
+
+const envNats = {
+  NATS_HOST: '',
 };
 
 const envDatabase = {
@@ -18,7 +23,7 @@ const slackConfig = {
   SLACK_OAUTH_TOKEN: '',
 };
 
-const env = { ...envStandard, ...envDatabase, ...slackConfig, ...resendConfig };
+const env = { ...envStandard, ...envNats, ...envDatabase, ...slackConfig, ...resendConfig };
 
 export const auth = {
   name: 'Auth',
@@ -143,6 +148,33 @@ export const portalCustomer = {
     containerName: 'valcompare.portal-customer',
     envVars: Object.keys(env),
     hostPort: 5004,
+  },
+  infisical: {
+    gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
+    ssh: { projectSlug: 'solutions-z-cbb', secretPath: '/valcompare/ssh' },
+    apps: [
+      { projectSlug: 'solutions-z-cbb', secretPath: '/valcompare/database' },
+      { projectSlug: 'solutions-z-cbb', secretPath: '/valcompare/resend' },
+      { projectSlug: 'solutions-z-cbb', secretPath: '/valcompare/slack' },
+    ],
+  },
+};
+
+export const broker = {
+  name: 'Broker',
+  package: '@valcompare/cli.broker',
+  command: 'broker',
+  env,
+  npm: {
+    registry: 'https://npm.pkg.github.com/',
+    readScopes: ['studio-75', 'valcompare'],
+    writeScopes: ['valcompare'],
+  },
+  docker: {
+    imageName: 'ghcr.io/valcompare/container-broker:main',
+    containerName: 'valcompare.broker',
+    envVars: Object.keys(env),
+    hostPort: 5005,
   },
   infisical: {
     gitHubAction: { projectSlug: 'execution-environments-v5w-q', secretPath: '/github', recursive: true },
